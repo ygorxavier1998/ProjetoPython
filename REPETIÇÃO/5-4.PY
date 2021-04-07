@@ -5,13 +5,17 @@ taxa de crescimento de 1.5%. Faça um programa que calcule e escreva o número d
  necessários para que a população do país 
 A ultrapasse ou iguale a população do país B, mantidas as taxas de crescimento.
 '''
+#Altere o programa anterior permitindo ao 
+# usuário informar as 
+# populações e as 
+#Taxas de crescimento iniciais. 
+#Valide a entrada e permita repetir a operação.
 
-
-def Populacao():
-    PopulacaoA = 80000
-    TaxaA = 3/100
-    PopulacaoB = 200000
-    TaxaB = 1.5/100
+def Populacao(p1,p2,t1,t2):
+    PopulacaoA = p1
+    TaxaA = t1/100
+    PopulacaoB = p2
+    TaxaB = t2/100
     conte = 0
     while(PopulacaoB >= PopulacaoA):
         print("POPULAÇÃO A--->{}\nPOPULAÇÃO B--->{}".format(PopulacaoA,PopulacaoB))
@@ -24,4 +28,8 @@ def Populacao():
 
 
 if __name__ == '__main__':
-    Populacao()
+    PopA = int(input())
+    PopB = int(input())
+    TaxaA = float(input())
+    TaxaB = float(input())
+    Populacao(PopA,PopB,TaxaA,TaxaB)
