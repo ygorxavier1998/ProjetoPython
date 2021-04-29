@@ -1,6 +1,6 @@
 #Altere o programa anterior para mostrar no final a soma dos números
 
-'''
+
 def sequencia(primeiro,segundo):
     soma = 0
     while(primeiro > segundo):
@@ -13,6 +13,6 @@ if __name__ == '__main__':
     primeiro = int(input())
     segundo = int(input())
     sequencia(primeiro,segundo)
-'''
+
 
 
