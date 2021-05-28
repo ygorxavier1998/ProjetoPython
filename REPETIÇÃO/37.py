@@ -6,9 +6,24 @@ ser dada quando o usuário digitar 0 (zero) no campo código. Ao encerrar o prog
 os códigos e valores do clente mais alto, do mais baixo, do mais gordo e do mais magro,
 além da média das alturas e dos pesos dos clientes
 '''
+def main():
+    aluno = { }
+    codigo = int()
+    altura = float()
+    peso = float()
 
-from typing_extensions import TypeAlias
+    while(True):
+        print("SEJA BEM VINDA A ACADEMIA 2KJ")
+        codigo = int(input("DIGITE SEU CODIGO\t"))
+        if(codigo==0):
+            break
 
+        altura = float(input("SEU ALTURA\t"))
+        peso = float(input("SEU PESO\t"))
+        if(codigo not in aluno.keys()):
+            aluno[codigo] = [altura,peso]
+
+    Estatisficas(aluno)
 
 def Estatisficas(lista):
     MaiorPeso = 0
@@ -26,25 +41,13 @@ def Estatisficas(lista):
 
         MedioAltura += (lista[x][0])/len(lista)
 
-    print("MAIOR PESO:",MaiorPeso)
+    print("MAIOR PESO: ",MaiorPeso)
     print("MAIOR ALTURA:",MaiorAltura)
-    print("MEDIA ALTURA:",MedioAltura )     
-    print("MEDIA PESO:",MediaPeso)     
+    print("MEDIA ALTURA:",MedioAltura )
+    print("MEDIA PESO:",MediaPeso)
+
+
 if __name__ == '__main__':
-    aluno = { }
-    codigo = int()
-    altura = float()
-    peso = float()
+    main()
+    
 
-    while(True):
-        print("SEJA BEM VINDA A ACADEMIA 2KJ")
-        codigo = int(input("DIGITE SEU CODIGO\t"))
-        if(codigo==0):
-            break
-
-        altura = float(input("SEU ALTURA\t"))
-        peso = float(input("SEU PESO\t"))
-      
-        if(codigo not in aluno.keys()):
-            aluno[codigo] = [altura,peso]
-    Estatisficas(aluno)
