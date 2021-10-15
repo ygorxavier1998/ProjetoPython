@@ -41,8 +41,7 @@ def calculo(x,p):
         divida += porcentagem 
         Tabela_Juros.add_row([divida,porcentagem,parcela,round(divida/parcela,2)])
         print(Tabela_Juros)
-   
-    
+
 
 def main():
     
