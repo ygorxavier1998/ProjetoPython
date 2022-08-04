@@ -3,11 +3,11 @@
 #Faça um programa capaz de gerar a série até o n−ésimo termo.
 
 
-def fibo():
+def fibo(numero):
     futuro = 0
     presente = 0
     passado = 0
-    for x in range(10):
+    for x in range(numero):
         if(x==0):
             passado += 0
         if(x==1):
@@ -21,4 +21,5 @@ def fibo():
         
 
 if __name__ == '__main__':
-    fibo()
+    N = int(input())
+    fibo(N)
