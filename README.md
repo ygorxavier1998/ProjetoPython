@@ -1,2 +1,2 @@
-# ProjetoPython
-programas e exercicios em pyhton do site pyhton brasil com comentários
+# Projeto Python
+programas e exercicios em python do site pyhton brasil com comentários
