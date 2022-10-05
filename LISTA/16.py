@@ -17,10 +17,51 @@ Desafio: Crie ma fórmula para chegar na posição da lista a partir do salário
 
 '''
 
+
+
+from ast import If
+
+
 def cal(Valor):
-    return null
-
+    for item in Valor.items():
+        print(item)    
+   
 if __name__ == '__main__':
-    ListaValor = [{"a":0,"b":0,"c":0,"d":0,"e":0,"f":0,"g":0,"h":0,"j":0}]
+    ListaValor = {"a":0 , "b":0 ,"c":0 ,"d":0 ,"e":0 ,"f":0 ,"g":0 ,"h":0 ,"j":0}
+    entrada = int(input())
     
+    while(entrada != 1 ):   
+        entrada = int(input())
+          
+        if(entrada >= 1000):
+            ListaValor["a"] +=1
 
+        elif(entrada >= 200 and entrada <= 299):
+            ListaValor["j"] +=1
+
+        elif(entrada >= 300 and entrada <= 399):
+            ListaValor["h"] +=1
+                
+        elif(entrada >= 400 and entrada <= 499):
+            ListaValor["g"] +=1
+
+        elif(entrada >= 500 and entrada <= 599):
+            ListaValor["f"] +=1
+        
+        elif(entrada >= 600 and entrada <= 699):
+            ListaValor["e"] +=1
+
+        elif(entrada >= 700 and entrada <= 799):
+            ListaValor["d"] +=1
+
+        elif(entrada >= 800 and entrada <= 899):
+            ListaValor["c"] +=1
+        
+        elif(entrada >= 900 and entrada <= 999):
+            ListaValor["b"] +=1
+      
+
+        if(entrada == 1):
+            break
+
+    cal(ListaValor)
