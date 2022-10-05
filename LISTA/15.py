@@ -16,6 +16,8 @@ import math as math
 
 def main():
     notas = []
+    MaiorQueAMedia = []
+    AbaixoSete = []
     while(True):
         nota = float(input("nota aluno:"))
         if(nota < 0):
@@ -26,13 +28,23 @@ def main():
     tamanho = len(notas)
     print("A - {}".format(tamanho))
     reverseList = notas[::-1]
-    print("B - {} ".format(notas), end="")
+    print("B - {}\n".format(notas), end="")
     print("C - {} ".format(notas[::-1]))
     print("D - {} ".format(sum(notas)))
     media = sum(notas)/tamanho
     print("E - {} ".format(media))
-    MaiorQueAMedia =(list(map(lambda nota: nota >= media,notas)))
+
+    for nota in notas:
+        if(nota > media):
+            MaiorQueAMedia.append(nota)
+        elif(nota < 7):
+            AbaixoSete.append(nota)
+
     print("F - {} ".format(MaiorQueAMedia))
+    print("H - {} ".format(AbaixoSete))
+    print("ADIOS!!!!!!!")
     
+
+   
 if __name__ == '__main__':
     main()
