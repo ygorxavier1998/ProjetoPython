@@ -13,6 +13,7 @@ $700 - $799 = d
 $800 - $899 = c 
 $900 - $999 = b
 $1000 em diante = a 
+
 Desafio: Crie ma fórmula para chegar na posição da lista a partir do salário, sem fazer vários ifs aninhados.
 
 '''
@@ -29,7 +30,7 @@ def cal(Valor):
 if __name__ == '__main__':
     ListaValor = {"a":0 , "b":0 ,"c":0 ,"d":0 ,"e":0 ,"f":0 ,"g":0 ,"h":0 ,"j":0}
     entrada = int(input())
-    
+
     while(entrada != 1 ):   
         entrada = int(input())
           
