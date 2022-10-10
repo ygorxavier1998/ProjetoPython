@@ -28,7 +28,6 @@ def calc(atleta):
         
 
 def main():
-    
     atletas = {}
     salto = []
     print("Digite o nome do atleta")
@@ -43,7 +42,6 @@ def main():
         atletas[nome] = salto
         calc(atletas)
         nome = input("nome: ")
-        
         salto = []
 
 
