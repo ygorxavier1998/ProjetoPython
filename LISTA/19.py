@@ -33,11 +33,10 @@ O Sistema Operacional mais votado foi o Unix, com 3500 votos, correspondendo a 4
 if __name__ == '__main__':
 
     SistemasOperacional = ["Windows_Server 0","Unix 0","Linux 0","Netware 0","Mac_OS 0" ,"Outro 0"]
+    listOrder = str(SistemasOperacional).split(" ")
 
-    for item in SistemasOperacional:
-        listaValor = item.split(" ")
-        entrada = int(input())
-        if(entrada==1):
-            listaValor[1] =+ 1
+    
+    
         
-        print(listaValor)
+      
+
