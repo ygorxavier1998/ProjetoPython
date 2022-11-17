@@ -27,16 +27,49 @@ Total                    8800
 
 O Sistema Operacional mais votado foi o Unix, com 3500 votos, correspondendo a 40% dos votos.
 '''
+import math as math
 
 
+def stec(info, total ):
+    
+    for sistema,valor in zip(info.keys(),info.values()):
+        print("Sistema Operacional  |    Votos  |    %")
+        print("----------------------------------------------")
+        print("|{0}-----------------|------{1}-----|-------------|{2:.2f}".format(sistema,valor,((valor/total)*100)))
+        print("----------------------------------------------")
+       
 
 if __name__ == '__main__':
-
     SistemasOperacional = ["Windows_Server 0","Unix 0","Linux 0","Netware 0","Mac_OS 0" ,"Outro 0"]
-    listOrder = str(SistemasOperacional).split(" ")
+    SistemasOperacionalDic ={}
+    cont = 0
+    for ope in SistemasOperacional:
+          SistemasOperacionalDic[ope.split(" ")[0]] = 0
 
-    
-    
+ 
+    while(True): 
+        entrada = int(input("1 - Windows_Server | 2 - Unix | 3 - Linux |  4 - Netware | 5 - Mac_OS | 6 - Outro - n: \n"))
         
-      
+        if(entrada==0):break
+        
+        if(entrada==1):
+            SistemasOperacionalDic['Windows_Server']+=1
+            cont+=1
+        elif(entrada==2):
+              SistemasOperacionalDic['Unix']+=1
+              cont+=1
+        elif(entrada==3):
+            SistemasOperacionalDic['Linux']+=1
+            cont+=1
+        elif(entrada==4):
+            SistemasOperacionalDic['Netware']+=1
+            cont+=1
+        elif(entrada==5):
+              SistemasOperacionalDic['Mac_OS']+=1
+              cont+=1
+        elif(entrada==6):
+              SistemasOperacionalDic['Mac_OS']+=1
+              cont+=1
+
+stec(SistemasOperacionalDic,cont)
 
