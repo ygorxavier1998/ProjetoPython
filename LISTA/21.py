@@ -26,7 +26,5 @@ if __name__ == '__main__':
         consumoIndividual = float(input("Km por litro: "))
         carros.append(carro)
         consumo.append(consumoIndividual)
-        
-       
 
     calc(carros,consumo)
