@@ -19,6 +19,6 @@ n = 5
 
 for item in range(n):
     for item_second in range(n):
-        print(item,end="")
+        print(item+1," ",end="")
         if(item==item_second):break
     print("\n")
