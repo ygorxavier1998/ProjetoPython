@@ -43,4 +43,4 @@ print(table)
 teste = open("arquivos.txt", "w")
 
 teste.writelines(saida_Str)
-
+#----------------------------------------------------------------#
