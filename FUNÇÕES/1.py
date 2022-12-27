@@ -15,10 +15,13 @@ Veja também a página com as soluções propostas pela comunidade em Exercicios
 '''
 
 
-n = 5
 
-for item in range(n):
-    for item_second in range(n):
-        print(item+1," ",end="")
-        if(item==item_second):break
-    print("\n")
+def canc(n):
+    for item in range(n):
+        for item_second in range(n):
+            print(item+1," ",end="")
+            if(item==item_second):break
+        print("\n")
+    
+entrada = int(input("digite o numero a começar"))
+canc(entrada)
