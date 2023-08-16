@@ -29,5 +29,6 @@ jobs:
         target_branch: main
         git_pull_args: --ff-only 
         git config pull.rebase: false 
+        git config pull.ff: only 
       
         
