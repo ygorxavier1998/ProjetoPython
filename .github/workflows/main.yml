@@ -7,6 +7,14 @@ on:
   workflow_dispatch:
 env:
  DOWNSTREAM_BRANCH: ""
+  # Optional fetch arguments
+ FETCH_ARGS: ""
+  # Optional merge arguments
+ MERGE_ARGS: ""
+  # Optional push arguments
+ PUSH_ARGS: ""
+  # Optional toggle to spawn time logs (keeps action active) 
+ SPAWN_LOGS: "false" # "true" or "false"
 jobs:
   sync_with_upstream:
     runs-on: ubuntu-latest
@@ -27,10 +35,12 @@ jobs:
        
         upstream_repository: YgorXavierS/ProjetoPython
         downstream_branch: ${{ env.DOWNSTREAM_BRANCH }}
+        fetch_args: ${{ env.FETCH_ARGS }}
+        merge_args: ${{ env.MERGE_ARGS }}
+        push_args: ${{ env.PUSH_ARGS }}
+        spawn_logs: ${{ env.SPAWN_LOGS }}
+        
         upstream_branch: main
         target_branch: main
-        git_pull_args: --ff-only 
-        git config pull.rebase: false 
-        git config pull.ff: only 
-      
+ 
         
