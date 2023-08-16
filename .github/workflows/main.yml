@@ -23,8 +23,11 @@ jobs:
       id: sync
       uses: bdougie/Fork-Sync-With-Upstream-action@fork
       with:
-        git_pull_args: --ff-only  
+       
         upstream_repository: YgorXavierS/ProjetoPython
         upstream_branch: main
-        target_branch: main                       # optional
-       
+        target_branch: main
+        git_pull_args: --ff-only 
+        git config pull.rebase: false 
+      
+        
