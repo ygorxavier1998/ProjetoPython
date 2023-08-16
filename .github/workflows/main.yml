@@ -14,7 +14,7 @@ jobs:
     steps:
     # Step 1: run a standard checkout action, provided by github
     - name: Checkout HEAD
-      uses: actions/checkout@v2
+      uses:  actions/checkout@a81bbbf8298c0fa03ea29cdc473d45769f953675
       with:
         ref: main
 
@@ -23,6 +23,7 @@ jobs:
       id: sync
       uses: bdougie/Fork-Sync-With-Upstream-action@fork
       with:
+       
         upstream_repository: YgorXavierS/ProjetoPython
         upstream_branch: main
         target_branch: main                       # optional
