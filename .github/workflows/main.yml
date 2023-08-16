@@ -21,7 +21,6 @@ jobs:
     # Step 2: run this sync action - specify the upstream repo, upstream branch to sync with, and target sync branch
     - name: Pull upstream changes
       id: sync
-      uses: bdougie/Fork-Sync-With-Upstream-action@fork
       with:
         upstream_repository: https://github.com/YgorXavierS/ProjetoPython
         upstream_branch: main
