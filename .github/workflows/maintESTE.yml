@@ -5,7 +5,7 @@ env:
   UPSTREAM_URL: "https://github.com/YgorXavierS/ProjetoPython.git"
   # Required, token to authenticate bot, could use ${{ secrets.GITHUB_TOKEN }} 
   # Over here, we use a PAT instead to authenticate workflow file changes.
-  WORKFLOW_TOKEN: ${{ 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 }}
+  WORKFLOW_TOKEN: "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"
   # Optional, defaults to main
   UPSTREAM_BRANCH: "main"
   # Optional, defaults to UPSTREAM_BRANCH
